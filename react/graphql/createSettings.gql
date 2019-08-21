@@ -1,0 +1,10 @@
+mutation CreateSettings($cookies: boolean, $privacy: boolean) {
+  createSettings(fields: $cookies) {
+    cacheId
+    settings: setting {
+      settingId: id
+      cookiesAccepted
+      privacyAccepted
+    }
+  }
+}
