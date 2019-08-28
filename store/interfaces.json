@@ -5,10 +5,31 @@
   "my-account-link.test-link": {
     "component": "MyAppLink"
   },
-  "profile-display.test-display": {
-    "component": "BeautyData"
+  "privacy-policy/menu": {
+    "component": "Menu"
   },
-  "profile-input.test-input": {
-    "component": "FavColor"
+  "testRoute": {
+    "around": [
+      "storeWrapper"
+    ],
+    "before": [
+      "header"
+    ],
+    "after": [
+      "footer"
+    ],
+    "preview": {
+      "type": "box",
+      "height": 800
+    }
+  },
+  "testRoute.test": {
+    "component": "Home",
+    "around": [
+      "homeWrapper"
+    ],
+    "before": [
+      "header.full"
+    ]
   }
 }

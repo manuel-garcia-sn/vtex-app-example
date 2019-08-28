@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Checkbox, Button } from 'vtex.styleguide'
 import {FormattedMessage} from "react-intl";
 
-class FavColor extends Component {
+class ProfileSettings extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -57,4 +57,4 @@ class FavColor extends Component {
     }
 }
 
-export default FavColor
+export default ProfileSettings
